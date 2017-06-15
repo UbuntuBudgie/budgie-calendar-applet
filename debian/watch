@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S+)\.tar\.gz/budgie-calendar-applet-$1\.tar\.gz/ \
+  https://github.com/danielpinto8zz6/budgie-calendar-applet/tags .*/v?(\d\S+)\.tar\.gz
