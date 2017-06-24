@@ -8,7 +8,8 @@ Build-Depends: debhelper (>= 9),
                libgtk-3-dev,
                libpeas-dev,
                budgie-core-dev,
-               valac
+               valac,
+               meson
 Standards-Version: 3.9.8
 Homepage: https://github.com/danielpinto8zz6/budgie-calendar-applet
 Vcs-Browser: https://github.com/UbuntuBudgie/budgie-calendar-applet/tree/debian

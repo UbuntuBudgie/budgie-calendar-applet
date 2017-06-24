@@ -1,3 +1,9 @@
+budgie-calendar-applet (3.0-0ubuntu1~zestyubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Sat, 24 Jun 2017 09:52:36 +0100
+
 budgie-calendar-applet (2.0-0ubuntu1~zesty) zesty; urgency=medium
 
   * Initial release.
