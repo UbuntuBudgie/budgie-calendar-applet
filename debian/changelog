@@ -1,3 +1,15 @@
+budgie-calendar-applet (4.0-0ubuntu2~zesty) zesty; urgency=medium
+
+  * Install gsettings xml/translations and changelog
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Sat, 19 Aug 2017 07:23:20 +0100
+
+budgie-calendar-applet (4.0-0ubuntu1~zesty) zesty; urgency=medium
+
+  * New upstream release
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Fri, 18 Aug 2017 21:41:51 +0100
+
 budgie-calendar-applet (3.0-0ubuntu1~zestyubuntu1) zesty; urgency=medium
 
   * New upstream release
