@@ -1,0 +1,36 @@
+From 22f7026fbc5f5bbf5576637c7c348556178bc0d2 Mon Sep 17 00:00:00 2001
+From: danielpinto8zz6 <danielpinto8zz6@gmail.com>
+Date: Thu, 8 Feb 2018 22:03:12 +0000
+Subject: [PATCH] Fix custom date not being persistent
+
+fixes https://github.com/danielpinto8zz6/budgie-calendar-applet/issues/12
+---
+ src/CalendarApplet.vala | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/src/CalendarApplet.vala b/src/CalendarApplet.vala
+index e2c602b..623d075 100644
+--- a/src/CalendarApplet.vala
++++ b/src/CalendarApplet.vala
+@@ -189,6 +189,9 @@ public class CalendarApplet : Budgie.Applet {
+         switch_custom_format = new Gtk.Switch ();
+         switch_custom_format.set_halign (Gtk.Align.END);
+ 
++        if(applet_settings.get_boolean("custom-format-switch"))
++            switch_custom_format.set_active(true);
++
+         string label_link = (_ ("Date format syntax"));
+         Gtk.LinkButton linkbutton = new Gtk.LinkButton.with_label ("http://www.foragoodstrftime.com", label_link);
+ 
+@@ -414,7 +417,7 @@ public class CalendarApplet : Budgie.Applet {
+         time = new DateTime.now_local ();
+         string format;
+ 
+-        if (switch_custom_format.get_active ()) {
++        if (applet_settings.get_boolean("custom-format-switch")) {
+             unowned string title = custom_format.get_text ();
+             format = title;
+         } else {
+-- 
+2.14.1
+

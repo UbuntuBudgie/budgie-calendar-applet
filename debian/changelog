@@ -1,4 +1,12 @@
-budgie-calendar-applet (4.0-0ubuntu2~zesty) zesty; urgency=medium
+budgie-calendar-applet (4.0-0ubuntu3~artful) artful; urgency=medium
+
+  * Bug fixes
+    - restyle the preferences to allow the calendar spacing to appear better
+    - Add upstream patch to fix custom date remembering
+
+ -- David Mohammed <fossfreedom@ubuntu.com>  Thu, 05 Apr 2018 14:48:42 +0100
+
+budgie-calendar-applet (4.0-0ubuntu2~artful) artful; urgency=medium
 
   * Install gsettings xml/translations and changelog
 
